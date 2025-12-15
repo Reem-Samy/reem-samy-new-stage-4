@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bartle&family=BioRhyme:wght@200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Electrolize&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fragment+Mono:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bartle&family=BioRhyme:wght@200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Electrolize&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fragment+Mono:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <title>products</title>
+</head>
+<body>
+    
+     <!-- Header -->
+   <header>
+    <nav>
+        <div class="logo"></div>
+
+        <!-- BURGER MENU -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NAV LINKS -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="logo-icon"></div>
+    </nav>
+</header>
+
+
+    <!-- hero section -->
+    <section class="hero">
+<h2 class="hero-text">Discover Your Fresh Favorite</h2>
+    </section>
+
+
+    <!-- best reviews section -->
+<section class="best-reviews">
+    <h2 class="section-title">Best Reviews</h2>
+
+    <div class="reviews-container">
+
+        <!-- Card 1 -->
+        <div class="review-card">
+            <div class="card-info">
+                <h3>Caesar Salad <span class="price">120 EGP</span></h3>
+                <div class="stars"></div>
+            </div>
+
+            <!-- 3D Model -->
+<model-viewer class="model-3d" 
+    src="model2/caesar salad 3d model.glb"
+    ar 
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    tone-mapping="neutral"
+    poster="poster.webp"
+    shadow-intensity="1"
+    camera-orbit="0deg 45deg 2m"
+>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+</model-viewer>
+
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="review-card">
+            <div class="card-info">
+                <h3>Greek Salad <span class="price">100 EGP</span></h3>
+                <div class="stars"></div>
+            </div>
+
+<model-viewer class="model-3d" 
+    src="model3/salad bowl 3d model (1).glb"
+    ar 
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls 
+    tone-mapping="neutral"
+    poster="poster.webp"
+    shadow-intensity="1"
+    camera-orbit="0deg 45deg 2m"
+>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+</model-viewer>
+
+
+        </div>
+
+    </div>
+</section>
+
+<!-- menu section -->
+<section class="menu-section">
+
+    <div class="menu-header">
+        <h2 class="menu-title">Our Menu</h2>
+
+        <p class="menu-text">
+Discover a world of freshness with Tazeej’s vibrant salads — crafted with care, color, and flavor in every bowl.  From classic mixes to custom creations, there’s something fresh for everyone.
+        </p>
+
+        <div class="menu-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Signature Salads</button>
+            <button class="filter-btn">Protein Boost</button>
+            <button class="filter-btn">Vegan & Plant-Based</button>
+            <button class="filter-btn">Fruit Mixed</button>
+            <button class="filter-btn">Salad Bowls & Sides</button>
+            <button class="filter-btn">Cocktails</button>
+        </div>
+    </div>
+
+
+    <div class="menu-grid">
+
+        <!-- ROW 1 -->
+        <div class="menu-card">
+            <img src="imgs2/tuna.png" class="menu-img">
+            <h3 class="menu-name">Tuna Salad</h3>
+            <p class="menu-desc">Fresh tuna, pepper, corn, onions, mixed lettuce, mayonnaise</p>
+            <div class="menu-bottom">
+                <span class="menu-price">120 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/qunoa.png" class="menu-img">
+            <h3 class="menu-name">Quinoa Salad</h3>
+            <p class="menu-desc">Quinoa, avocado, cucumber, tomato, and light lemon dressing</p>
+            <div class="menu-bottom">
+                <span class="menu-price">135 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/tropical.png" class="menu-img">
+            <h3 class="menu-name">Tropical Sunrise</h3>
+            <p class="menu-desc">Pineapple, mango, and orange — a sweet, sunny mix full of vitamins.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">80 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/colslew.png" class="menu-img">
+            <h3 class="menu-name">Coleslaw</h3>
+            <p class="menu-desc">White cabbage, carrots, onions, and creamy mayo.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">70 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+
+        <!-- ROW 2 -->
+        <div class="menu-card">
+            <img src="imgs2/chicken salad.png" class="menu-img">
+            <h3 class="menu-name">Chicken Salad</h3>
+            <p class="menu-desc">Grilled chicken, seasonal veggies, and ranch or honey mustard dressing.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">150 EGP</span>
+                <button id="cartBtn" class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/tabbulah.png" class="menu-img">
+            <h3 class="menu-name">Tabbouleh</h3>
+            <p class="menu-desc">Parsley, bulgur, tomato, lemon, pomegranate, and olive oil.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">125 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/green boost.png" class="menu-img">
+            <h3 class="menu-name">Green Boost Juice</h3>
+            <p class="menu-desc">A blend of spinach, apple, cucumber, and lemon — light, cleansing, and energizing.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">75 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/mixed.png" class="menu-img">
+            <h3 class="menu-name">Mixed Berries</h3>
+            <p class="menu-desc">Strawberry, blueberry, mint, and honey dressing.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">70 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+
+        <!-- ROW 3 -->
+        <div class="menu-card">
+            <img src="imgs2/burry.png" class="menu-img">
+            <h3 class="menu-name">Berry Energy Mix</h3>
+            <p class="menu-desc">Grilled chicken, seasonal veggies, and ranch or honey mustard dressing.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">85 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/pasta.png" class="menu-img">
+            <h3 class="menu-name">Pasta Salad</h3>
+            <p class="menu-desc">Pasta, olives, bell peppers, peas, and light dressing.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">110 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/caprese.png" class="menu-img">
+            <h3 class="menu-name">Caprese Salad</h3>
+            <p class="menu-desc">Tomato, fresh mozzarella, basil, and virgin olive oil.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">160 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="imgs2/avocado.png" class="menu-img">
+            <h3 class="menu-name">Avocado Chicken Salad</h3>
+            <p class="menu-desc">Avocado, chicken, tomatoes, and lime dressing.</p>
+            <div class="menu-bottom">
+                <span class="menu-price">135 EGP</span>
+                <button class="cart-btn"><img src="imgs2/iconoir_cart.png" class="cart-icon"></button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- build salad section -->
+<section class="build-salad">
+
+    <div class="build-container">
+
+        
+        <div class="build-text">
+            <h2>Can’t find your perfect match?<br>Create your own bowl now..</h2>
+
+            <p>
+                Your salad, your way! Choose every ingredient — from the greens and 
+                toppings to your favourite dressing — and create the perfect bowl 
+                that fits your taste, mood, and lifestyle. Freshness and flavor are 
+                completely in your hands.
+            </p>
+
+            <button class="build-btn" id="buildBtn">Build Your Salad</button>
+        </div>
+
+       
+        <div class="build-image">
+            <img src="imgs2/can't find.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- footer -->
+    <footer class="footer">
+  <div class="footer-left">
+    <h4>Company</h4>
+    <ul>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>Featured Categories</li>
+      <li>About Us</li>
+    </ul>
+  </div>
+  <div class="footer-center">
+    <h4>Resources</h4>
+    <ul>
+      <li>Privacy Policy</li>
+      <li>Terms and Condition</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <div class="footer-right">
+    <h3>Tazeej</h3>
+   <h4>Subscribe to get the latest menu drops and exclusive offers.</h4>
+    <form>
+      <input type="email" placeholder="Enter your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <div class="social-icons">
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+    const cards = document.querySelectorAll(".menu-card");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                cards.forEach(card => card.classList.add("show"));
+                observer.disconnect(); 
+            }
+        });
+    }, { threshold: 0.2 });
+
+    observer.observe(document.querySelector(".menu-grid"));
+
+
+    const cartBtn = document.getElementById("cartBtn");
+
+    cartBtn.addEventListener("click", () => {
+        window.location.href = "details.html";  
+    });
+
+
+
+    const textBox = document.querySelector(".build-text");
+    const imgBox = document.querySelector(".build-image");
+
+    const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                textBox.classList.add("show");
+                imgBox.classList.add("show");
+                sectionObserver.disconnect(); 
+            }
+        });
+    }, { threshold: 0.3 });
+
+    sectionObserver.observe(document.querySelector(".build-salad"));
+
+    document.getElementById("buildBtn").addEventListener("click", function() {
+    window.location.href = "salad.html";
+});
+
+
+
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("nav-links");
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navLinks.classList.toggle("open");
+});
+
+
+</script>
+
+</body>
+</html>
