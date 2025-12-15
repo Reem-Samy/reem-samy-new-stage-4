@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bartle&family=BioRhyme:wght@200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Electrolize&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fragment+Mono:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bartle&family=BioRhyme:wght@200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Electrolize&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fragment+Mono:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+   <header>
+    <nav>
+        <div class="logo"></div>
+
+        <!-- BURGER MENU -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NAV LINKS -->
+        <ul id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="logo-icon"></div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text slide-left">
+                <h1>Freshness You Can Taste,<br>Quality You Can Trust.</h1>
+                <p class="hero-text">Life is so endlessly delicious.</p>
+                <p class="hero-text2">See, explore, and trust your food like never before — real textures, real freshness, real transparency.</p>
+                <button class="btn">Find your offers</button>
+            </div>
+
+            <div class="hero-image1"> 
+
+              <model-viewer class="salad-bowl" src="model/salad bowl 3d model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"     camera-orbit="0deg 45deg 2m">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <!-- <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div> -->
+</model-viewer>  
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section">
+
+    <div class="about-overlay"></div>
+
+    <div class="about-container">
+
+        <div class="about-images">
+            <img src="imgs1/Rectangle 25.png" alt="Salad Image" class="img-large">
+            <img src="imgs1/Rectangle 26.png" alt="Salad Splash" class="img-small">
+        </div>
+
+        <div class="about-text">
+            <h2>Who Are We?</h2>
+
+            <p>
+                At Tazeej, we believe that eating healthy should be both simple
+                and exciting. We're a fresh-food brand that specializes in
+                ready-made and customizable salads, created from the highest-quality
+                ingredients carefully chosen by our expert team. Every leaf, fruit,
+                and dressing is selected with attention and passion to guarantee
+                freshness, flavor, and balance in every bite.
+            </p>
+
+            <p>
+                Our mission is to help people make smarter, healthier food choices
+                without giving up taste or convenience. That's why we give our
+                customers the freedom to create their own perfect salad, choosing
+                every detail — from fresh vegetables and fruits to proteins,
+                toppings, and dressings — to match their unique preferences and
+                lifestyle.
+            </p>
+
+            <p>
+                At Tazeej, we don’t just serve salads; we serve a fresh experience
+                built on trust, care, and creativity. Whether you're craving a
+                quick, nutritious meal or looking to design your own mix of colors
+                and flavors, Tazeej is here to make freshness personal.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Fresh Choices Section -->
+   <section class="signature-section">
+
+    <div class="text-box">
+        <h2 id="title">Fresh Choices,<br>Just for You !</h2>
+
+        <h3 id="subtitle">Signature Salads</h3>
+
+        <p id="desc">
+            Our chef-crafted creations are perfectly balanced with fresh,
+            high-quality ingredients. Each bowl is made to deliver the
+            ideal mix of taste, texture, and nutrition — ready to brighten
+            your day with every bite.
+        </p>
+
+        <button class="explore-btn">Explore</button>
+    </div>
+
+    <div class="slider">
+
+        <div class="arrow left" onclick="prevSlide()">❮</div>
+
+        <div class="circle-wrapper">
+            <img src="imgs1/build.png" class="circle" id="c1">
+            <img src="imgs1/fruit.png" class="circle" id="c2">
+            <img src="imgs1/protien.png" class="circle" id="c3">
+            <img src="imgs1/vegan.png" class="circle" id="c4">
+            <img src="imgs1/bowls.png" class="circle" id="c5">
+        </div>
+
+        <img src="imgs1/signture b.png" class="main-img" id="mainImage">
+
+        <div class="arrow right" onclick="nextSlide()">❯</div>
+
+    </div>
+
+</section>
+
+    <!-- Best Seller Section -->
+<div class="section-container" id="saladSection">
+
+
+<!-- LEFT MENU -->
+<div class="left-menu" id="menuBar">
+<div class="menu-item">
+<img src="imgs1/grilled ch.png" alt="">
+<p>Grilled chicken breast</p>
+</div>
+<div class="menu-item">
+<img src="imgs1/lettuce.png" alt="">
+<p>Romaine lettuce</p>
+</div>
+<div class="menu-item">
+<img src="imgs1/bread.png" alt="">
+<p>Croutons</p>
+</div>
+<div class="menu-item">
+<img src="imgs1/ceaser.png" alt="">
+<p>Caesar dressing</p>
+</div>
+</div>
+
+
+<!-- TEXT CONTENT -->
+<div class="salad-content">
+<h2>Our Best Seller</h2>
+<h3>Caesar Salad</h3>
+<p>Crisp romaine lettuce tossed with creamy Caesar dressing, topped with golden croutons, freshly grated Parmesan, and tender grilled chicken. Every bite delivers the perfect balance of crunch, creaminess, and flavor — a timeless classic made the Tazeej way: fresh, simple, and irresistibly delicious.</p>
+<button class="add-btn">Add To Cart</button>
+</div>
+
+
+<!-- SALAD IMAGE -->
+<img src="imgs1/best sell.png" class="salad-image" id="saladImg" />
+
+</div>
+
+    <!-- Why Choose Us Section -->
+<section class="why-choose-us">
+  <h2>Why Choose Us?</h2>
+
+  <div class="cards">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="img-wrap">
+        <img src="imgs1/quality.png" alt="t">
+      </div>
+      <h3>Quality You Can Trust</h3>
+      <p>We handpick only the best products to ensure every item you get from Tazeej meets the highest standards — fresh, reliable, and crafted with care.</p>
+      <button class="read-btn">read more...</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="img-wrap">
+        <img src="imgs1/fast.png" alt="">
+      </div>
+      <h3>Fast & Easy Experience</h3>
+      <p>From browsing to checkout, we make your shopping smooth and simple. Get what you need in just a few clicks — quick, seamless, and stress-free.</p>
+      <button class="read-btn">read more...</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="img-wrap">
+        <img src="imgs1/we care.png" alt="">
+      </div>
+      <h3>We Care About You</h3>
+      <p>At Tazeej, our customers come first. We're here to listen, help, and make sure you always leave satisfied — because your trust means everything to us.</p>
+      <button class="read-btn">read more...</button>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Testimonial Section -->
+<section class="tazeej-section">
+
+
+  <h2 class="section-title">Tazeej Lovers Speak</h2>
+
+  <div class="section-content">
+
+    <div class="chef-img">
+      <img src="imgs1/Group 17.png" alt="">
+    </div>
+
+
+    <div class="right-side">
+
+      <div class="reviewer-card">
+        <img src="imgs1/Screenshot_2025-11-06_191511-removebg-preview 1.png" alt="">
+        <span>Our Reviewer</span>
+      </div>
+
+      <div class="paragraph-card">
+        <p>
+          “Tazeej completely changed the way I think about salads!
+          The ingredients are always so fresh and colorful, and I love that I can customize every part of my bowl — from the greens to the dressing. It feels like a meal made just for me. Plus, the delivery is quick, and everything arrives perfectly chilled. Definitely my go-to for healthy, delicious meals!”
+        </p>
+
+        <div class="reviewer-info">
+          <img src="imgs1/Ellipse.png" alt="">
+          <div>
+            <h4>Sara Mahmoud</h4>
+            <p>Marketing Specialist</p>
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+    <!-- CTA Section -->
+   <section class="cta-section">
+
+  <div class="content">
+    <h2>Your Healthy Bowl Awaits..</h2>
+    <p>Discover your new favorite salad — fresh, colorful, and crafted with care.</p>
+    <div class="buttons">
+      <button id="exploreBtn" class="btn-explore">Explore the Menu</button>
+      <button id="buildBtn" class="btn-build">Build Your Salad</button>
+    </div>
+    <img class="salad-img" src="imgs1/tomatoes-321671_1280-removebg-preview.png" alt="Salad and ingredients">
+  </div>
+</section>
+
+<div class="leaves-container">
+  <div class="leaf leaf-left"></div>
+  <div class="leaf leaf-right"></div>
+</div>
+
+<footer class="footer">
+  <div class="footer-left">
+    <h4>Company</h4>
+    <ul>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>Featured Categories</li>
+      <li>About Us</li>
+    </ul>
+  </div>
+  <div class="footer-center">
+    <h4>Resources</h4>
+    <ul>
+      <li>Privacy Policy</li>
+      <li>Terms and Condition</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <div class="footer-right">
+    <h3>Tazeej</h3>
+   <h4>Subscribe to get the latest menu drops and exclusive offers.</h4>
+    <form>
+      <input type="email" placeholder="Enter your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <div class="social-icons">
+    </div>
+  </div>
+</footer>
+
+
+    <script>
+
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+
+        document.querySelectorAll('.slide-left, .slide-right, .slide-up, .slide-down').forEach(el => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+
+
+
+        let index = 0;
+
+const data = [
+    {
+        main: "imgs1/signture b.png",
+        circles: ["imgs1/fruit.png",
+         "imgs1/vegan.png",
+        "imgs1/bowls.png",
+        "imgs1/protien.png",
+    "imgs1/build.png"],
+        title: "Fresh Choices, Just for You !",
+        subtitle: "Signature Salads",
+        desc: "Our chef-crafted creations are perfectly balanced with fresh, high-quality ingredients. Each bowl is made to deliver the ideal mix of taste, texture, and nutrition — ready to brighten your day with every bite."},
+    {
+        main: "imgs1/protin b.png",
+        circles: ["imgs1/bowls.png",
+         "imgs1/fruit.png",
+        "imgs1/build.png",
+        "imgs1/vegan.png",
+        "imgs1/signture.png"],
+        title: "Fresh Choices, Just for You !",
+        subtitle: "Protein Boost Salads",
+        desc: "Fuel your body with fresh, protein-rich bowls made with chicken, tuna, eggs, or plant-based options. These hearty salads are both satisfying and energizing — ideal for active lifestyles."
+    },
+    {
+        main: "imgs1/vegan b.png",
+        circles: ["imgs1/build.png",
+         "imgs1/bowls.png",
+        "imgs1/signture.png",
+        "imgs1/fruit.png",
+    "imgs1/protien.png"],
+        title: "Fresh Choices, Just for You !",
+        subtitle: "Vegan & Plant-Based",
+        desc: "Purely natural, 100% plant-based ingredients freshly prepared for you. These salads celebrate the flavors of nature — wholesome, clean, and full of color."
+    },
+        {
+        main: "imgs1/fruit b.png",
+        circles: ["imgs1/signture.png",
+         "imgs1/build.png",
+        "imgs1/protien.png",
+        "imgs1/bowls.png",
+    "imgs1/vegan.png"],
+        title: "Fresh Choices, Just for You !",
+        subtitle: "Fruit Mixes",
+        desc: "A refreshing blend of nature’s sweetest offerings. Our fruit salads are light, colorful, and packed with vitamins — perfect for a healthy treat any time of the day."
+    },
+        {
+        main: "imgs1/salad bowls b.png",
+        circles: ["imgs1/protien.png",
+         "imgs1/signture.png",
+        "imgs1/vegan.png",
+        "imgs1/build.png",
+    "imgs1/fruit.png"],
+        title: "Fresh Choices, Just for You !",
+        subtitle: "Salad Bowls & Sides",
+        desc: "Complement your main meal with light and refreshing side salads. From small bowls to shareable bites, they’re the perfect balance of flavor and freshness."
+    },
+            {
+        main: "imgs1/build b.png",
+        circles: ["imgs1/vegan.png",
+         "imgs1/protien.png",
+        "imgs1/fruit.png",
+        "imgs1/signture.png",
+    "imgs1/bowls.png"],
+        title: "Fresh Choices, Just for You !",
+        subtitle: "Build Your Own",
+        desc: "Design your dream salad exactly the way you like it. Choose your favorite greens, toppings, proteins, and dressing — your creativity makes every bowl uniquely yours."
+    }
+];
+
+function updateSlider() {
+    const item = data[index];
+
+    document.getElementById("mainImage").src = item.main;
+
+    document.getElementById("c1").src = item.circles[0];
+    document.getElementById("c2").src = item.circles[1];
+    document.getElementById("c3").src = item.circles[2];
+    document.getElementById("c4").src = item.circles[3];
+     document.getElementById("c5").src = item.circles[4];
+
+    document.getElementById("title").innerHTML = item.title;
+    document.getElementById("subtitle").innerHTML = item.subtitle;
+    document.getElementById("desc").innerHTML = item.desc;
+
+  
+    document.getElementById("mainImage").style.transform = "scale(1.1)";
+    setTimeout(() => {
+        document.getElementById("mainImage").style.transform = "scale(1)";
+    }, 300);
+}
+
+function nextSlide() {
+    index = (index + 1) % data.length;
+    updateSlider();
+}
+
+function prevSlide() {
+    index = (index - 1 + data.length) % data.length;
+    updateSlider();
+}
+
+updateSlider();
+
+
+const section = document.getElementById("saladSection");
+const menuBar = document.getElementById("menuBar");
+const saladImg = document.getElementById("saladImg");
+
+
+section.addEventListener("mouseenter", () => {
+menuBar.classList.add("animate-menu");
+saladImg.classList.add("animate-salad");
+});
+
+const ctaSection = document.querySelector('.cta-section');
+
+ctaSection.addEventListener('mouseenter', () => {
+  ctaSection.classList.add('hover-active');
+});
+
+ctaSection.addEventListener('mouseleave', () => {
+  ctaSection.classList.remove('hover-active');
+});
+
+    const exploreBtn = document.getElementById("exploreBtn");
+
+    exploreBtn.addEventListener("click", () => {
+        window.location.href = "products.html"; 
+    });
+
+
+        const buildBtn = document.getElementById("buildBtn");
+
+    buildBtn.addEventListener("click", () => {
+        window.location.href = "salad.html"; 
+    });
+
+
+    const burger = document.getElementById("burger");
+const navLinks = document.getElementById("nav-links");
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navLinks.classList.toggle("open");
+});
+
+    </script>
+</body>
+</html>
