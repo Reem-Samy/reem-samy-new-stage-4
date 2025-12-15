@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bartle&family=BioRhyme:wght@200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Electrolize&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fragment+Mono:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bartle&family=BioRhyme:wght@200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Electrolize&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fragment+Mono:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="salad.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <title>make your own</title>
+</head>
+<body>
+    
+    <!-- Header -->
+   <header>
+    <nav>
+        <div class="logo"></div>
+
+        <!-- BURGER MENU -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NAV LINKS -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="logo-icon"></div>
+    </nav>
+</header>
+
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Build Your Own Salad</h1>           
+        </div>
+
+<model-viewer 
+    src="model4/fresh salad 3d model.glb"
+    alt="3D Salad Bowl"
+    camera-controls
+    disable-zoom
+    shadow-intensity="1"
+    class="salad-model"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    tone-mapping="neutral"
+    poster="poster.webp"
+    camera-orbit="40deg 65deg 2m">
+
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+
+
+    <!-- <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div> -->
+</model-viewer>
+    </section>
+
+
+
+   <section class="builder-section">
+
+   
+    <div class="section-header">
+        <h2>
+            Choose Your Fresh Base 
+            <span class="arrow">→</span>
+        </h2>
+        <span class="click-note">Click to Choose</span>
+    </div>
+
+    <div class="card-container">
+        <div class="card"><img src="imgs3/Ellipse 36.png"><p>Romaine Lettuce</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (1).png"><p>Cherry Tomatoes</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (2).png"><p>Sweet Corn</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (3).png"><p>Cucumber</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (4).png"><p>Red Cabbage</p></div>
+
+        <div class="card"><img src="imgs3/Ellipse 36 (5).png"><p>Red Onions</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (6).png"><p>Baby Spinach</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (7).png"><p>Red Beans</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (8).png"><p>Green Beans</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (9).png"><p>Bell Peppers</p></div>
+
+        <div class="card"><img src="imgs3/Ellipse 36 (10).png"><p>Carrots</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (11).png"><p>Broccoli Florets</p></div>
+    </div>
+
+
+    <div class="section-header">
+        <h2>
+            Add a Protein Boost 
+            <span class="arrow">→</span>
+        </h2>
+        <span class="click-note">Click to Choose</span>
+    </div>
+
+    <div class="card-container">
+        <div class="card"><img src="imgs3/Ellipse 36 (12).png"><p>Grilled Chicken</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (13).png"><p>Tuna</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (14).png"><p>Grilled Beef</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (15).png"><p>Boiled Eggs</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (16).png"><p>Chickpeas</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (17).png"><p>Grilled Halloumi</p></div>
+    </div>
+
+
+
+    <div class="section-header">
+        <h2>
+            Finish It with Flavor 
+            <span class="arrow">→</span>
+        </h2>
+        <span class="click-note">Click to Choose</span>
+    </div>
+
+    <div class="card-container">
+        <div class="card"><img src="imgs3/Ellipse 36 (18).png"><p>Caesar Dressing</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (19).png"><p>Balsamic Vinaigrette</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (20).png"><p>Honey Mustard</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (21).png"><p>Ranch</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (22).png"><p>Lemon & Olive Oil</p></div>
+        <div class="card"><img src="imgs3/Ellipse 36 (23).png"><p>Tahini</p></div>
+    </div>
+    
+    <div class="bottom-action">
+    <button class="build-btn">Mix It Fresh!</button>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- footer -->
+    <footer class="footer">
+  <div class="footer-left">
+    <h4>Company</h4>
+    <ul>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>Featured Categories</li>
+      <li>About Us</li>
+    </ul>
+  </div>
+  <div class="footer-center">
+    <h4>Resources</h4>
+    <ul>
+      <li>Privacy Policy</li>
+      <li>Terms and Condition</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <div class="footer-right">
+    <h3>Tazeej</h3>
+   <h4>Subscribe to get the latest menu drops and exclusive offers.</h4>
+    <form>
+      <input type="email" placeholder="Enter your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <div class="social-icons">
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+
+
+// Show cards on hover
+document.querySelectorAll(".card-container").forEach(container => {
+    container.addEventListener("mouseenter", () => {
+        container.classList.add("active");
+    });
+});
+
+// Click to select
+document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("selected");
+    });
+});
+
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("nav-links");
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navLinks.classList.toggle("open");
+});
+
+</script>
+
+</body>
+</html>
