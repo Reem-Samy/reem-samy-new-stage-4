@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bartle&family=BioRhyme:wght@200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Electrolize&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fragment+Mono:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bartle&family=BioRhyme:wght@200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Electrolize&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fragment+Mono:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="details.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <title>product details</title>
+</head>
+<body>
+    
+     <!-- Header -->
+  <header>
+    <nav>
+        <div class="logo"></div>
+
+        <!-- BURGER MENU BUTTON (ADDED) -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NAV LINKS WITH ID (UPDATED) -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="logo-icon"></div>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Products Details</h1>           
+    </div>
+</section>
+
+
+
+<section class="product-details">
+
+    <!-- LEFT SIDE -->
+    <div class="product-left">
+
+        <!-- Small cards column -->
+        <div class="small-cards">
+            <div class="small-card">
+                <model-viewer src="model6/grilled chicken 3d model.glb" auto-rotate camera-controls disable-zoom camera-orbit="0deg 45deg 2m"></model-viewer>
+                <p>Grilled Chicken</p>
+            </div>
+
+            <div class="small-card">
+                <model-viewer src="model7/mixed vegetables 3d model.glb" auto-rotate camera-controls disable-zoom camera-orbit="0deg 45deg 2m"></model-viewer>
+                <p>Seasonal Veggies</p>
+            </div>
+
+            <div class="small-card">
+                <model-viewer src="model8/sauce bowl 3d model (1).glb" auto-rotate camera-controls disable-zoom camera-orbit="0deg 45deg 2m"></model-viewer>
+                <p>Honey Mustard</p>
+            </div>
+        </div>
+
+        <!-- Main Large Card -->
+        <div class="large-card">
+            <button class="fav-btn">♡</button>
+            <model-viewer 
+                src="model5/chicken salad bowl 3d model.glb"
+                auto-rotate
+                camera-controls
+                disable-zoom
+                shadow-intensity="1"
+                camera-orbit="0deg 45deg 2m"
+                class="big-model">
+            </model-viewer>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="product-right">
+
+        <h2 class="product-title">Chicken Salad</h2>
+
+        <div class="price-box">
+            <span class="old-price">200 EGP</span>
+            <span class="new-price">150 EGP</span>
+        </div>
+
+        <p class="description">
+            Tender grilled chicken mixed with crisp greens and fresh veggies,
+            topped with your favorite dressing — a flavorful, protein-rich salad
+            that keeps you feeling fresh and full.
+        </p>
+
+        <!-- Quantity -->
+        <div class="quantity-box">
+            <button class="qty-btn">-</button>
+            <span class="qty-value">1</span>
+            <button class="qty-btn">+</button>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">Add to Cart</button>
+
+        <!-- Nutrition -->
+        <div class="nutrition">
+            <span>Calories: 420 kcal</span>
+            <span>Protein: 32g</span>
+            <span>Carbohydrates: 18 g</span>
+            <span>Fats: 22 g</span>
+            <span>Fiber: 5g</span>
+        </div>
+
+        <!-- Payment Icons -->
+        <div class="payments">
+            <img src="imgs4/Group 85.png" alt="Visa">
+            <img src="imgs4/Group 84.png" alt="Mastercard">
+            <img src="imgs4/Group 82.png" alt="Apple Pay">
+            <img src="imgs4/Group 86.png" alt="Google Pay">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- related section -->
+<section class="related-products">
+    <h2>Related Products</h2>
+
+    <div class="products-wrapper">
+        
+        <!-- Card 1 -->
+        <div class="product-card">
+            <span class="sale-label">SALE<br>25%</span>
+            <img src="imgs4/greek.png" alt="Greek Salad">
+            <h3 class="ralated-title">Greek Salad</h3>
+
+            <div class="price">
+                <span class="old">133 EGP</span>
+                <span class="new">100 EGP</span>
+            </div>
+
+            <div class="counter">
+                <button class="qty-btn">-</button>
+                <span class="qty-value">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+            <span class="sale-label">SALE<br>15%</span>
+            <img src="imgs4/tuna.png" alt="Tuna Salad">
+            <h3 class="ralated-title">Tuna Salad</h3>
+
+            <div class="price">
+                <span class="old">140 EGP</span>
+                <span class="new">120 EGP</span>
+            </div>
+
+            <div class="counter">
+                <button class="qty-btn">-</button>
+                <span class="qty-value">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+            <span class="sale-label">SALE<br>25%</span>
+            <img src="imgs4/ceasar.png" alt="Caesar Salad">
+            <h3 class="ralated-title">Caesar Salad</h3>
+
+            <div class="price">
+                <span class="old">150 EGP</span>
+                <span class="new">120 EGP</span>
+            </div>
+
+            <div class="counter">
+                <button class="qty-btn">-</button>
+                <span class="qty-value">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-left">
+    <h4>Company</h4>
+    <ul>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>Featured Categories</li>
+      <li>About Us</li>
+    </ul>
+  </div>
+  <div class="footer-center">
+    <h4>Resources</h4>
+    <ul>
+      <li>Privacy Policy</li>
+      <li>Terms and Condition</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <div class="footer-right">
+    <h3>Tazeej</h3>
+    <h4>Subscribe to get the latest menu drops and exclusive offers.</h4>
+    <form>
+      <input type="email" placeholder="Enter your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</footer>
+
+
+
+<script>
+const qtyValue = document.querySelector(".qty-value");
+const qtyButtons = document.querySelectorAll(".qty-btn");
+
+qtyButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        let qty = parseInt(qtyValue.textContent);
+        if (btn.textContent === "+") qty++;
+        if (btn.textContent === "-" && qty > 1) qty--;
+        qtyValue.textContent = qty;
+    });
+});
+
+    const section = document.querySelector('.related-products');
+    const wrapper = document.querySelector('.products-wrapper');
+
+    section.addEventListener('mouseenter', () => {
+        wrapper.classList.add('show');
+    });
+
+
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach(counter => {
+        const qtyValue = counter.querySelector(".qty-value");
+        const qtyButtons = counter.querySelectorAll(".qty-btn");
+
+        qtyButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                let qty = parseInt(qtyValue.textContent);
+
+                if (btn.textContent === "+") qty++;
+                if (btn.textContent === "-" && qty > 1) qty--;
+
+                qtyValue.textContent = qty;
+            });
+        });
+    });
+
+
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("nav-links");
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        navLinks.classList.toggle("open");
+    });
+
+
+
+</script>
+
+</body>
+</html>
